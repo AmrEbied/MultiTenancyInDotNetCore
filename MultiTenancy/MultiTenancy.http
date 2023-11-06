@@ -1,0 +1,19 @@
+﻿@MultiTenancy_HostAddress = https://localhost:44364
+
+POST {{MultiTenancy_HostAddress}}/api/products
+tenant: amr
+Content-Type: application/json
+
+{
+ "name": "string",
+  "description": "string",
+  "rate": 0
+}
+
+###
+
+GET {{MultiTenancy_HostAddress}}/api/products
+tenant: amr
+
+###
+ 
